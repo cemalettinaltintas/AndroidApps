@@ -34,7 +34,10 @@ public class LandmarkAdapter extends RecyclerView.Adapter<LandmarkAdapter.Landma
             public void onClick(View view) {
                 Intent intent=new Intent(holder.itemView.getContext(),DetailsActivity.class);
                 //intent.putExtra("landmark",landmarkArrayList.get(position));
-                intent.putExtra("landmark",landmarkArrayList.get(holder.getAdapterPosition()));
+                //intent.putExtra("landmark",landmarkArrayList.get(holder.getAdapterPosition()));
+                Singleton singleton=Singleton.getInstance();
+                singleton.setSentLanmark(landmarkArrayList.get(holder.getAdapterPosition()));
+
                 holder.itemView.getContext().startActivity(intent);
             }
         });
