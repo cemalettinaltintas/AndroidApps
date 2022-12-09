@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         landmarkArrayList=new ArrayList<>();
 
         Landmark pisa=new Landmark("Pisa","Italy",R.drawable.pisa);
-        Landmark colloseum=new Landmark("Colloseum","France",R.drawable.colloseum);
+        Landmark colloseum=new Landmark("Colloseum","Italy",R.drawable.colloseum);
         Landmark london=new Landmark("London Bridge","UK",R.drawable.london);
         Landmark eiffel=new Landmark("Eiffel Tower","France",R.drawable.eiffel);
 
